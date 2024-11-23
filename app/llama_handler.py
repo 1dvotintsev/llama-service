@@ -7,7 +7,7 @@ def query_model(prompt: str) -> str:
     try:
         # Запуск команды Ollama
         result = subprocess.run(
-            ["ollama", "run", "llama"],
+            ["ollama", "run", "llama3.2:1b"],
             input=prompt,
             text=True,
             capture_output=True,
